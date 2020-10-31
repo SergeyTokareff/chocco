@@ -2,7 +2,7 @@
   height: 100vh;
   min-height: 650px;
   position: relative;
-  background: url("../../img/form__bg.png");
+  background: url("../img/form__bg.png");
 }
 .order__section .container {
   display: flex;
@@ -70,7 +70,7 @@
   border-radius: 4px;
 }
 .order__section .container .form__col .form__controls .radio--checkbox .radio__visible::before {
-  background: url("../../img/tick.png") center center no-repeat;
+  background: url("../img/tick.png") center center no-repeat;
 }
 .order__section .container .form__col .form__controls .radio__elem {
   display: none;

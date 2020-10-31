@@ -41,7 +41,7 @@
                 position: relative;
 
                 &::before {
-                    content: url("../../img/separator.png");
+                    content: url("../img/separator.png");
                     position: absolute;
                     top: 58px;
                     right: 0;
@@ -86,10 +86,10 @@
 
 .benefits-section {
     position: relative;
-    background: url('../../img/decor/transparent_leaf.png') left top 57% no-repeat;
+    background: url('../img/decor/transparent_leaf.png') left top 57% no-repeat;
 
     &::before {
-        content: url('../../img/decor/raspberry.png');
+        content: url('../img/decor/raspberry.png');
         position: absolute;
         bottom: -110px;
         left: 0;

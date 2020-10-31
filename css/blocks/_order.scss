@@ -2,7 +2,7 @@
     height: 100vh;
     min-height: 650px;
     position: relative;
-    background: url('../../img/form__bg.png');
+    background: url("../img/form__bg.png");
 
     .container {
         display: flex;
@@ -83,7 +83,7 @@
                                 border-radius: 4px;
 
                                 &::before {
-                                    background: url('../../img/tick.png') center center no-repeat;
+                                    background: url('../img/tick.png') center center no-repeat;
                                 }
                             }
                         }

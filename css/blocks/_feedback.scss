@@ -46,7 +46,7 @@
                 }
 
                 &::after {
-                    content: url('../../img/decor/reviews__leaves.png');
+                    content: url('../img/decor/reviews__leaves.png');
                     position: absolute;
                     top: 22px;
                     right: 0;
@@ -94,7 +94,7 @@
 
     &::before {
         content: "";
-        background: url('../../img/decor/two_strawberries.png');
+        background: url('../img/decor/two_strawberries.png');
         position: absolute;
         width: 136px;
         height: 78px;
@@ -104,7 +104,7 @@
 
     &::after {
         content: "";
-        background: url('../../img/decor/five_berries.png');
+        background: url('../img/decor/five_berries.png');
         position: absolute;
         width: 135px;
         height: 193px;

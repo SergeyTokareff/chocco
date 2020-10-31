@@ -45,6 +45,9 @@ p {
   margin-top: 32px;
   cursor: pointer;
 }
+.btn:focus {
+  outline: none;
+}
 
 .fixed-menu {
   position: fixed;
@@ -220,7 +223,7 @@ p {
   position: relative;
 }
 .features .container .benefits__item::before {
-  content: url("../../img/separator.png");
+  content: url("../img/separator.png");
   position: absolute;
   top: 58px;
   right: 0;
@@ -255,10 +258,10 @@ p {
 
 .benefits-section {
   position: relative;
-  background: url("../../img/decor/transparent_leaf.png") left top 57% no-repeat;
+  background: url("../img/decor/transparent_leaf.png") left top 57% no-repeat;
 }
 .benefits-section::before {
-  content: url("../../img/decor/raspberry.png");
+  content: url("../img/decor/raspberry.png");
   position: absolute;
   bottom: -110px;
   left: 0;
@@ -309,7 +312,7 @@ p {
   transform: translateX(-50%);
 }
 .feedback .container .reviews__display::after {
-  content: url("../../img/decor/reviews__leaves.png");
+  content: url("../img/decor/reviews__leaves.png");
   position: absolute;
   top: 22px;
   right: 0;
@@ -345,7 +348,7 @@ p {
 }
 .feedback::before {
   content: "";
-  background: url("../../img/decor/two_strawberries.png");
+  background: url("../img/decor/two_strawberries.png");
   position: absolute;
   width: 136px;
   height: 78px;
@@ -354,7 +357,7 @@ p {
 }
 .feedback::after {
   content: "";
-  background: url("../../img/decor/five_berries.png");
+  background: url("../img/decor/five_berries.png");
   position: absolute;
   width: 135px;
   height: 193px;
@@ -367,7 +370,7 @@ p {
   height: 100vh;
   min-height: 650px;
   position: relative;
-  background: url("../../img/form__bg.png");
+  background: url("../img/form__bg.png");
 }
 .order__section .container {
   display: flex;
@@ -435,7 +438,7 @@ p {
   border-radius: 4px;
 }
 .order__section .container .form__col .form__controls .radio--checkbox .radio__visible::before {
-  background: url("../../img/tick.png") center center no-repeat;
+  background: url("../img/tick.png") center center no-repeat;
 }
 .order__section .container .form__col .form__controls .radio__elem {
   display: none;

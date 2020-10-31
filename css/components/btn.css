@@ -10,3 +10,6 @@
   margin-top: 32px;
   cursor: pointer;
 }
+.btn:focus {
+  outline: none;
+}
