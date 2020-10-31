@@ -1,0 +1,79 @@
+.features {
+  height: 100vh;
+  min-height: 650px;
+}
+.features .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.features .container .features__headline {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.features .container .features__headline .features__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #292929;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.features .container .features__headline .features__subtitle {
+  padding: 0 26%;
+  line-height: 22px;
+}
+.features .container .benefits {
+  display: flex;
+}
+.features .container .benefits__item {
+  flex: 1;
+  padding: 0 3%;
+  text-align: center;
+  position: relative;
+}
+.features .container .benefits__item::before {
+  content: url("../../img/separator.png");
+  position: absolute;
+  top: 58px;
+  right: 0;
+  transform: translateX(50%);
+}
+.features .container .benefits__item:first-child {
+  padding-left: 0;
+}
+.features .container .benefits__item:last-child {
+  padding-right: 0;
+}
+.features .container .benefits__item:last-child::before {
+  display: none;
+}
+.features .container .benefits__item .benefit__image-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 126px;
+  height: 126px;
+  background: #F2F5F4;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.features .container .benefits__item .benefit__image-wrapper .benefit__icon {
+  width: 75px;
+  height: 69px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.benefits-section {
+  position: relative;
+  background: url("../../img/decor/transparent_leaf.png") left top 57% no-repeat;
+}
+.benefits-section::before {
+  content: url("../../img/decor/raspberry.png");
+  position: absolute;
+  bottom: -110px;
+  left: 0;
+}

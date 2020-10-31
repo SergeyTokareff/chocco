@@ -1,0 +1,135 @@
+.order__section {
+  height: 100vh;
+  min-height: 650px;
+  position: relative;
+  background: url("../../img/form__bg.png");
+}
+.order__section .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.order__section .container .order__title {
+  color: #365A49;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 59px;
+}
+.order__section .container .form {
+  display: flex;
+}
+.order__section .container .form__col {
+  flex: 1;
+  margin-right: 20px;
+}
+.order__section .container .form__col:last-child {
+  margin-right: 0;
+}
+.order__section .container .form__col .form__row {
+  display: flex;
+  margin-bottom: 18px;
+}
+.order__section .container .form__col .form__row .form__block {
+  flex: 1;
+  margin-right: 20px;
+}
+.order__section .container .form__col .form__row .form__block .form__input {
+  width: 100%;
+  border: none;
+  padding: 18px 11px;
+  border: 3px solid transparent;
+}
+.order__section .container .form__col .form__row .form__block .form__input:focus {
+  border: 3px solid #dee2bd;
+  outline: none;
+}
+.order__section .container .form__col .form__row .form__block .form__input--textarea {
+  height: 180px;
+  resize: none;
+}
+.order__section .container .form__col .form__row .form__block:last-child {
+  margin-right: 0;
+}
+.order__section .container .form__col .form__controls {
+  display: flex;
+  flex-wrap: wrap;
+}
+.order__section .container .form__col .form__controls .radio {
+  display: flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+          user-select: none;
+  margin-bottom: 19px;
+  margin-right: 10px;
+  align-items: center;
+}
+.order__section .container .form__col .form__controls .radio--checkbox .radio__visible {
+  border-radius: 4px;
+}
+.order__section .container .form__col .form__controls .radio--checkbox .radio__visible::before {
+  background: url("../../img/tick.png") center center no-repeat;
+}
+.order__section .container .form__col .form__controls .radio__elem {
+  display: none;
+}
+.order__section .container .form__col .form__controls .radio__elem:checked ~ .radio__visible::before {
+  display: block;
+}
+.order__section .container .form__col .form__controls .radio__visible {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 10px;
+}
+.order__section .container .form__col .form__controls .radio__visible::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #365a49;
+  position: absolute;
+  display: none;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.order__section .container .form__col .form__buttons .btn__order {
+  color: #fff;
+  background: #2E4E3F;
+}
+.order__section .container .form__col .form__buttons .btn__order:hover {
+  color: #2E4E3F;
+  background: #fff;
+}
+.order__section .container .form__col .form__buttons .btn__reset {
+  background: transparent;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+}
+.order__section .container .form__col .form__buttons .btn__reset:hover {
+  color: #000;
+}
+.order__section::before {
+  content: "";
+  background: url("../img/decor/one__berry.png");
+  width: 47px;
+  height: 48px;
+  position: absolute;
+  bottom: 69px;
+  left: 51px;
+}
+.order__section::after {
+  content: "";
+  background: url("../img/decor/order__leaf.png");
+  width: 135px;
+  height: 188px;
+  position: absolute;
+  bottom: 58px;
+  right: 10px;
+}
