@@ -2,9 +2,14 @@
     background: #61C4D9 url(../../img/pattern.png) right bottom no-repeat;
     padding-bottom: 50px;
     position: relative;
+    height: 100vh;
+    min-height: 650px;
 
     .container {
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-between;
 
         .top-header {
             display: flex;
@@ -37,6 +42,10 @@
                 font-weight: 400;
                 font-size: 22px;
                 line-height: 18px;
+
+                &:hover {
+                    color: #292929;
+                }
             }
         }
 

@@ -2,6 +2,8 @@
   background: #61C4D9 url(../../img/pattern.png) right bottom no-repeat;
   padding-bottom: 50px;
   position: relative;
+  height: 100vh;
+  min-height: 650px;
 }
 .header .container .top-header {
   display: flex;
