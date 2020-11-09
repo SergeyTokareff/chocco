@@ -188,9 +188,6 @@ p {
     color: #fff;
     background: #2E4E3F; }
 
-.chocolades__wrapper {
-  flex: 1; }
-
 .chocolades {
   width: 100%; }
 
@@ -259,7 +256,7 @@ p {
   .header-desc {
     padding: 0 25%; }
 
-  .chocolades__wrapper {
+  .chocolades {
     display: none; }
 
   .header-bottom {
@@ -626,7 +623,7 @@ p {
 @media (max-width: 480px) {
   html {
     font-size: 16px; } }
-.map {
+.map__img {
   width: 100%; }
 
 .container__footer {
@@ -672,7 +669,7 @@ p {
   html {
     font-size: 16px; }
 
-  .container__footer {
+  .footer__container {
     flex-direction: column;
     padding: 1.1111111111rem 0 1.9444444444rem; }
 
