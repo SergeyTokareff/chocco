@@ -626,7 +626,7 @@ p {
 .map__img {
   width: 100%; }
 
-.container__footer {
+.footer__container {
   display: flex;
   flex-direction: row; }
 
