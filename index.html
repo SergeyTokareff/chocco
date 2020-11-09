@@ -13,12 +13,12 @@
 
         <!--  HEADER  -->
         <header class="header">
-            <div class="container">
+            <div class="container header__container">
                 <div class="top-header">
                     <a href="#" class="logo-img">
                         <img src="img/logo.svg" alt="Chocco">
                     </a>
-                    <nav>
+                    <nav class="navigation">
                         <ul class="menu">
                             <li class="menu__item">О нас</li>
                             <li class="menu__item">Батончики</li>
@@ -29,9 +29,14 @@
                             <li class="menu__item">Контакты</li>
                         </ul>
                     </nav>
-                    <a href="tel:+88009039090" class="phone">
+                    <a href="tel:+88009039090" class="phone header__phone">
                         <img src="./img/phone-img.svg" alt="phone" class="phone-img">
                         8 800 903 90 90</a>
+                    <a href="" class="hamburger">
+                        <span class="hamburger__plank"></span>
+                        <span class="hamburger__plank"></span>
+                        <span class="hamburger__plank"></span>
+                    </a>
                 </div>
                 <div class="header__title-section">
                     <div class="header__title-text">
@@ -39,22 +44,30 @@
                         <p class="header-desc">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p>
                         <button class="btn btn-order">Заказать</button>
                     </div>
-                
-                <img src="img/chocolades.png" alt="chocolades" class="chocolades">
+                    <div class="chocolades__wrapper">
+                        <img src="img/chocolades.png" alt="chocolades" class="chocolades">
+                    </div>
+                    
                </div>
                 <div class="header-bottom">
                     <ul class="header-bottom__list">
                         <li class="header-bottom__item">
-                            <img src="img/leaves.svg" alt="leaves" class="header-bottom__img">
-                            100% натуральный продукт
+                            <svg class="header-bottom__img">
+                                <use xlink:href="./img/header__bottom-sprite.svg#leaves"></use>
+                            </svg>
+                            <div class="header-bottom__text">100% натуральный продукт</div>
                         </li>
                         <li class="header-bottom__item">
-                            <img src="img/car.svg" alt="car" class="header-bottom__img">
-                            3-5 дней доставка по РФ
+                            <svg class="header-bottom__img">
+                                <use xlink:href="./img/header__bottom-sprite.svg#car"></use>
+                            </svg>
+                            <div class="header-bottom__text">3-5 дней доставка по РФ</div>
                         </li>
                         <li class="header-bottom__item">
-                            <img src="img/figure.svg" alt="figure" class="header-bottom__img">
-                            Не портит фигуру
+                            <svg class="header-bottom__img">
+                                <use xlink:href="./img/header__bottom-sprite.svg#figure"></use>
+                            </svg>
+                            <div class="header-bottom__text">Не портит фигуру</div>
                         </li>
                     </ul>
                 </div>
@@ -69,22 +82,20 @@
                     <div class="section__subtitle features__subtitle">В нашем мире все происходит очень быстро, поэтому мы делаем батончики, которые удобно взять с собой.</div>
                 </div>
                 <ul class="benefits">
-                    <li class="benefits__item">
+                    <li class="benefits__item benefit">
                         <div class="benefit__image">
                             <div class="benefit__image-wrapper">
                                 <img src="img/helpful.svg" alt="helpful" class="benefit__icon">
                             </div>           
                         </div>
                         <div class="benefit__text">
-                            <h3 class="benefit__title">Полезно</h3>
-                            <div class="benefit__desc">
-                                <p>
-                                    Натуральность - ключевое качествонашей продукции. Мы используемтолько природные ингредиенты.
-                                </p>
-                            </div>
+                            <h3 class="benefit__title">Полезно</h3>                           
+                            <p class="benefit__desc">
+                                Натуральность - ключевое качествонашей продукции. Мы используемтолько природные ингредиенты.
+                            </p>                            
                         </div>
                     </li>
-                    <li class="benefits__item">
+                    <li class="benefits__item benefit">
                         <div class="benefit__image">
                             <div class="benefit__image-wrapper">
                                 <img src="img/tasty.svg" alt="tasty" class="benefit__icon">
@@ -97,7 +108,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="benefits__item">
+                    <li class="benefits__item benefit">
                         <div class="benefit__image">
                             <div class="benefit__image-wrapper">
                             <img src="img/nutritionally.svg" alt="nutritionally" class="benefit__icon">
@@ -119,9 +130,10 @@
             <div class="container">
                 <h2 class="feedback__title">Отзывы</h2>
                 <div class="reviews">
-                    <div class="reviews__display">
+                    <div class="reviews__display review">
                         <div class="review__author-avatar">
-                            <img src="./img/alyona_kchmelnitskaya.jpg" alt="Алёна Хмельницкая" class="avatar">
+                            <img src="./img/alyona_kchmelnitskaya.jpg" alt="Алёна Хмельницкая" class="avatar"
+                            srcset="./img/alyona_kchmelnitskaya_130.jpg 768">
                         </div>
                         <div class="review__text">
                             <h3 class="review__title">Лучший перекус</h3>
@@ -130,16 +142,16 @@
                         </div>
                     </div>
                     <ul class="reviews__switcher">
-                        <li class="review-switcher__item"><a href="#"><img src="./img/alyona_kchmelnitskaya_small.jpg" alt="Алёна Хмельницкая"></a></li>
-                        <li class="review-switcher__item"><a href="#"><img src="./img/vadim_grachev_small.jpg" alt="Вадим Грачёв"></a></li>
-                        <li class="review-switcher__item"><a href="#"><img src="./img/maria_orlova_small.jpg" alt=""></a></li>
+                        <li class="reviews__switcher-item"><a href="#"><img src="./img/alyona_kchmelnitskaya_small.jpg" alt="Алёна Хмельницкая"></a></li>
+                        <li class="reviews__switcher-item"><a href="#"><img src="./img/vadim_grachev_small.jpg" alt="Вадим Грачёв"></a></li>
+                        <li class="reviews__switcher-item"><a href="#"><img src="./img/maria_orlova_small.jpg" alt="Мария Орлова"></a></li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <!--  ORDER  -->
-        <section class="order__section">
+        <section class="order">
             <div class="container">
                 <h2 class="order__title">Закажите доставку</h2>
                 <form class="form">
@@ -206,13 +218,38 @@
                             </label>
                         </div>
                         <div class="form__buttons">
-                            <input type="submit" value="Заказать" class="btn btn__order">
-                            <input type="reset" value="Очистить" class="btn btn__reset">
+                            <input type="submit" value="Заказать" class="btn form__order-btn">
+                            <input type="reset" value="Очистить" class="btn form__reset-btn">
                         </div>
                     </div>
                 </form>
             </div>
         </section>
+
+        <!--  MAP  -->
+        <section class="map">
+            <img src="./img/map.jpg" alt="Карта" class="map">
+        </section>
+
+        <!--  FOOTER  -->
+        <footer class="footer">
+            <div class="container container__footer">
+                <div class="footer__contacts">
+                    <p class="footer__address">Москва, ул. Новый Арбат, д.31/12</p>
+                    <a href="tel:+88009039090" class="phone footer__phone">
+                        <img src="./img/phone-img-green.svg" alt="phone" class="phone-img">
+                        8 800 903 90 90</a>
+                </div>
+                <div class="social">
+                    <ul class="social__list">
+                        <li class="social__list--item"><a href=""><img src="./img/social/vk.svg" alt="Вконтакте"></a></li>
+                        <li class="social__list--item"><a href=""><img src="./img/social/facebook.svg" alt="Вконтакте"></a></li>
+                        <li class="social__list--item"><a href=""><img src="./img/social/instagram.svg" alt="Вконтакте"></a></li>
+                        <li class="social__list--item"><a href=""><img src="./img/social/twitter.svg" alt="Вконтакте"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
 
     </div>

@@ -1,89 +1,81 @@
 .features {
     height: 100vh;
-    min-height: 650px;
-    
-    
-    .container {
-        display: flex;
+    min-height: rem(650px);
+
+    .container {        
         align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    
+    }
+}       
+         
+.features__headline {
+    text-align: center;
+    margin-bottom: rem(25px);
+}
         
-        .features__headline {
-            text-align: center;
-            margin-bottom: 25px;
+.features__title {
+    font-weight: 700;
+    font-size: rem(48px);
+    line-height: rem(58px);
+    color: #292929;
+    text-transform: uppercase;
+    margin-bottom: rem(25px);
+}
 
-        
-            .features__title {
-                font-weight: 700;
-                font-size: 48px;
-                line-height: 58px;
-                color: #292929;
-                text-transform: uppercase;
-                margin-bottom: 25px;
-            }
+.features__subtitle {
+    padding: 0 26%;
+    line-height: rem(22px);
+}   
 
-            .features__subtitle {
-                padding: 0 26%;
-                line-height: 22px;
-            }
+.benefits {
+    display: flex;
+}
 
+.benefits__item {
+    flex: 1;
+    padding: 0 3%;
+    text-align: center;
+    position: relative;
+
+    &::before {
+        content: url("../img/separator.png");
+        position: absolute;
+        top: rem(58px);
+        right: 0;
+        transform: translateX(50%);
+    }    
+
+    &:first-child {
+        padding-left: 0;
     }
 
-        .benefits {
-            display: flex;
+    &:last-child {
+        padding-right: 0;
 
-            &__item {
-                flex: 1;
-                padding: 0 3%;
-                text-align: center;
-                position: relative;
-
-                &::before {
-                    content: url("../img/separator.png");
-                    position: absolute;
-                    top: 58px;
-                    right: 0;
-                    transform: translateX(50%);
-                }
-                
-
-                &:first-child {
-                    padding-left: 0;
-                }
-
-                &:last-child {
-                    padding-right: 0;
-
-                    &::before {
-                        display: none;
-                    }
-                }
-
-                .benefit__image-wrapper {
-                    display: inline-block;
-                    position: relative;
-                    width: 126px;
-                    height: 126px;
-                    background: #F2F5F4;
-                    border-radius: 50%;
-                    overflow: hidden;
-
-                    .benefit__icon {
-                        width: 75px;
-                        height: 69px;
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                    }
-                }
-            }
+        &::before {
+            display: none;
         }
     }
 }
 
+.benefit__image-wrapper {
+    display: inline-block;
+    position: relative;
+    width: rem(126px);
+    height: rem(126px);
+    background: #F2F5F4;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.benefit__icon {
+    width: rem(75px);
+    height: rem(69px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}               
+             
 .benefits-section {
     position: relative;
     background: url('../img/decor/transparent_leaf.png') left top 57% no-repeat;
@@ -91,7 +83,58 @@
     &::before {
         content: url('../img/decor/raspberry.png');
         position: absolute;
-        bottom: -110px;
+        bottom: rem(-110px);
         left: 0;
+    }
+}
+
+@media (max-width:768px){
+    font-size: 17px;
+}
+
+@media(max-width: 480px) {
+    html {
+        font-size: 16px;
+    }
+
+    .benefits-section {
+        background: none;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .features__subtitle {
+        padding: 0;
+    }
+
+    .benefits {
+        flex-direction: column;
+    }
+
+    .benefits__item {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .benefit__image {
+        margin-right: rem(12px);
+    }
+
+    .benefit__text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: rem(12px);
+    }
+
+    .benefit__title {
+        margin-bottom: rem(14px);
     }
 }

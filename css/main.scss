@@ -1,17 +1,20 @@
-//z-indexes
-
-$z-fixed-menu: 100;
-$z-five-berries: 50;
 
 
+
+
+
+@import 'vars';
 @import './layout/layout';
 @import './components/btn';
+@import './components/hamburger.scss';
 @import './components/fixed-menu';
 
 @import './blocks/header';
 @import './blocks/features';
 @import './blocks/feedback';
 @import './blocks/order';
+@import './blocks/map';
+@import './blocks/footer';
 
 
 

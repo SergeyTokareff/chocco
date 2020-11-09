@@ -1,0 +1,9 @@
+$baseFontSize: 18px;
+
+//z-indexes
+$z-fixed-menu: 100;
+$z-five-berries: 50;
+
+@function rem($px) {
+    @return $px / $baseFontSize + 0rem;
+}

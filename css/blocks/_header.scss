@@ -1,126 +1,16 @@
 .header {
-    background: #61C4D9 url(../../img/pattern.png) right bottom no-repeat;
+    background: url(../../img/pattern.png) right bottom no-repeat;
+    background-color:#61C4D9;
     padding-bottom: 50px;
     position: relative;
     height: 100vh;
-    min-height: 650px;
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-content: space-between;
-
-        .top-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            padding-top: 24px;
-
-            .logo-img {
-                position: relative;
-                top: 12px;
-            }
-
-
-            .menu {
-                display: flex;
-                list-style-type: none;
-                color: #fff;
-                
-                font-weight: 400;
-                line-height: 20px;
-
-                &__item {
-                    margin-left: 27px;
-                }
-            }
-
-            .phone {
-                text-decoration: none;
-                color: #fff;
-                font-weight: 400;
-                font-size: 22px;
-                line-height: 18px;
-
-                &:hover {
-                    color: #292929;
-                }
-            }
-        }
-
-        .header__title-section {
-            display: flex;
-            justify-content: space-between;
-
-            .header__title-text {
-                padding: 84px 48px 84px 80px;
-                color: #fff;
-                
-
-                .header__main-title {
-                    font-weight: 800;
-                    font-size: 48px;
-                    line-height: 58px;
-                    text-transform: uppercase;
-                }
-
-                .header-desc {
-                    margin-top: 17px;
-                    font-weight: 400;
-                    font-size: 21px;
-                    line-height: 25px;
-                }
-
-                .btn-order {
-                    padding: 21px 41px;
-                    border-radius: 100px;
-                    border: none;
-                    color: #365A49;
-                    font-weight: 800;
-                    font-size: 16px;
-                    line-height: 18px;
-                    text-transform: uppercase;
-                    margin-top: 32px;
-                    cursor: pointer;
-
-                    &:hover {
-                        color: #fff;
-                        background: #2E4E3F;
-                    }
-                }
-            }
-        }
-        
-
-        .header-bottom {
-            padding-left: 80px;
-            margin-top: 64px;
-
-            &__list {
-                display: flex;
-                width: 500px;
-                color: #fff;
-                list-style-type: none;
-
-                .header-bottom__item {
-                    display: flex;
-                    align-items: flex-start;
-                    padding-right: 16px;
-
-                    .header-bottom__img {
-                        margin-right: 13px;
-                    }
-                }
-            }
-        }
-    }
+    min-height: rem(650px);
 
     &::before {
         content: "";
         background: url('../img/decor/leaf.png');
-        width: 59px;
-        height: 112px;
+        width: rem(59px);
+        height: rem(112px);
         position: absolute;
         bottom: -30px;
         left: 2%;
@@ -129,10 +19,215 @@
     &::after {
         content: "";
         background: url('../img/decor/bears.png');
-        width: 460px;
-        height: 341px;
+        width: rem(460px);
+        height: rem(341px);
         position: absolute;
         bottom: -48px;
         right: 2%;
+    }
+
+    .container {
+        justify-content: space-between;
+    }
+}
+
+
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: rem(24px);
+}
+
+.logo-img {
+    position: relative;
+    top: rem(12px);
+}
+
+.navigation {
+    display: flex;
+}
+
+.menu {
+    display: flex;  
+    align-items: center;  
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    color: #fff;                
+    font-weight: 400;
+    line-height: rem(20px);
+
+    &__item {
+        margin-left: rem(27px);
+    }
+}
+
+.phone {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: rem(22px);
+    line-height: 1rem;
+    min-width: rem(152px);
+
+    &:hover {
+        color: #292929;
+    }
+}        
+
+.header__title-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__title-text {
+    padding: rem(84px) 0rem rem(84px) 0;
+    color: #fff;
+    flex: 1;
+}
+        
+
+.header__main-title {
+    font-weight: 700;
+    font-size: rem(48px);
+    line-height: rem(58px);
+    text-transform: uppercase;
+}
+
+.header-desc {
+    margin-top: rem(17px);
+    font-weight: 400;
+    font-size: rem(21px);
+    line-height: rem(25px);
+}
+
+.btn-order {
+    padding: rem(21px) rem(41px);
+    border-radius: 100px;
+    border: none;
+    color: #365A49;
+    font-weight: 800;
+    font-size: rem(16px);
+    line-height: 1rem;
+    text-transform: uppercase;
+    margin-top: rem(32px);
+    cursor: pointer;
+
+    &:hover {
+        color: #fff;
+        background: #2E4E3F;
+    }
+}  
+
+.chocolades__wrapper {
+    flex: 1;
+}
+
+.chocolades {
+    width: 100%;
+}
+
+.header-bottom {
+    margin-top: rem(64px);
+}
+
+.header-bottom__list {
+    display: flex;
+    color: #fff;
+    list-style-type: none;
+}
+
+.header-bottom__item {
+    display: flex;
+    align-items: flex-start;
+    padding-right: rem(16px);
+    margin-right: rem(50px);
+}
+
+.header-bottom__img {
+    margin-right: rem(13px);
+    width: rem(40px);
+    height: rem(40px);
+}
+
+.header-bottom__text {
+    max-width: rem(85px);
+}
+
+
+@media(max-width: 768px) {
+    html {
+        font-size: 17px;
+    }
+
+    .header {
+        background: url(../../img/pattern.png) right center no-repeat;
+        background-color:#61C4D9;
+        padding-bottom: 60px;
+
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+
+    .container {
+        width: 90%;
+        height: 100%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .header__phone {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline-flex;
+    }
+
+    .header__title-text {
+        display: flex;
+        width: 100%;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &::before {
+            content: "";
+            width: 100%;
+            max-width: 374px;
+            height: 378px;
+            background: url('./../img/chocolades-and-berries.png') no-repeat;
+            background-size: contain;
+        }
+    }
+    
+     .header-desc {
+         padding: 0 25%;
+    }
+
+    .chocolades__wrapper {
+        display: none;
+    }
+     
+    .header-bottom {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 16px;
+    }
+   
+    .header__title-text {
+        width: 100%;
     }
 }

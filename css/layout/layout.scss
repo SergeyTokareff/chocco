@@ -1,3 +1,7 @@
+html {
+    font-size: $baseFontSize;
+}
+
 html, body {
     height: 100%;
 }
@@ -5,7 +9,7 @@ html, body {
 body {
     margin: 0;
     font-family: 'Alegreya Sans',sans-serif;
-    font-size: 18px;
+    font-size: 1rem;
     color: #666666;
 }
 
@@ -28,7 +32,13 @@ p {
 }
 
 .container {
-    width: 942px;
+    width: 90%;
+    max-width: rem(940px);
     margin: 0 auto;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
+
