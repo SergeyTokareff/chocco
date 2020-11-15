@@ -1,10 +1,7 @@
 .header {
     background: url(../../img/pattern.png) right bottom no-repeat;
     background-color:#61C4D9;
-    padding-bottom: 50px;
     position: relative;
-    height: 100vh;
-    min-height: rem(650px);
 
     &::before {
         content: "";
@@ -25,13 +22,12 @@
         bottom: -48px;
         right: 2%;
     }
-
-    .container {
-        justify-content: space-between;
-    }
 }
 
-
+.header__container {
+    justify-content: space-between;
+    padding-bottom: rem(45px);
+}
 
 .top-header {
     display: flex;
@@ -83,16 +79,15 @@
 }
 
 .header__title-text {
-    padding: rem(84px) 0rem rem(84px) 0;
+    padding: rem(84px) 0 rem(84px) 0;
     color: #fff;
     flex: 1;
-}
-        
+}        
 
 .header__main-title {
     font-weight: 700;
     font-size: rem(48px);
-    line-height: rem(58px);
+    line-height: 1.1;
     text-transform: uppercase;
 }
 
@@ -120,6 +115,11 @@
         background: #2E4E3F;
     }
 }  
+
+.wrapper__chocolades {
+    display: flex;
+    align-items: center;
+}
 
 .chocolades {
     width: 100%;
@@ -154,14 +154,10 @@
 
 
 @media(max-width: 768px) {
-    html {
-        font-size: 17px;
-    }
 
     .header {
         background: url(../../img/pattern.png) right center no-repeat;
         background-color:#61C4D9;
-        padding-bottom: 60px;
 
         &:before,
         &:after {
@@ -199,9 +195,10 @@
             content: "";
             width: 100%;
             max-width: 374px;
-            height: 378px;
+            height: rem(220px);
             background: url('./../img/chocolades-and-berries.png') no-repeat;
             background-size: contain;
+            background-position: center;
         }
     }
     
@@ -219,11 +216,25 @@
 }
 
 @media (max-width: 480px) {
-    html {
-        font-size: 16px;
-    }
    
     .header__title-text {
         width: 100%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .top-header {
+        padding-top: rem(5px);
+    }
+
+    .header-desc {
+        padding: 0;
+    }
+
+    .header::after {
+        background: #61C4D9;
+        height: rem(220px);
     }
 }

@@ -43,16 +43,9 @@
     }
 }
 
-@media (max-width: 768px) {
-    html {
-        font-size: 17px;
-    }
-}
+
 
 @media (max-width: 480px) {
-    html {
-        font-size: 16px;
-    }
 
     .footer__container {
         flex-direction: column;
@@ -65,6 +58,7 @@
 
     .footer__address {
         margin-bottom: rem(12px);
+        min-width: 0;
     }
 
     .social__list {

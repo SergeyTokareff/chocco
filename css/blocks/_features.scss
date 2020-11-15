@@ -1,6 +1,4 @@
 .features {
-    height: 100vh;
-    min-height: rem(650px);
 
     .container {        
         align-items: center;
@@ -85,18 +83,17 @@
         position: absolute;
         bottom: rem(-110px);
         left: 0;
+        z-index: 200;
     }
 }
 
 @media (max-width:768px){
-    font-size: 17px;
+    .benefits-section {
+        background-position: left top 16%;
+    }
 }
 
 @media(max-width: 480px) {
-    html {
-        font-size: 16px;
-    }
-
     .benefits-section {
         background: none;
 
@@ -138,3 +135,4 @@
         margin-bottom: rem(14px);
     }
 }
+

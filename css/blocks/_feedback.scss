@@ -1,6 +1,4 @@
 .feedback {
-    height: 100vh;
-    min-height: rem(650px);
     position: relative;
 
     &::before {
@@ -110,25 +108,52 @@
 }      
 
 @media (max-width: 768px) {
-    html {
-        font-size: 17px;
-    }
-
     .reviews__display {
         flex-direction: column;
         align-items: center;
+    }
+
+    .review__author-avatar {
+        width: rem(130px);
+        height: rem(132px);
+    }
+
+    .avatar {
+        max-width: 100%;
     }
 
     .review__text {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: rem(16px) rem(20px) 0 0;
+        padding: rem(16px) 0 0 0;
     }
 }
 
 @media (max-width: 480px) {
-    html {
-        font-size: 16px;
+    .feedback {
+        &::after {
+            content: "";
+            background: url('../img/decor/five_berries_small.png');
+            position: absolute;
+            width: 95px;
+            height: 170px;
+            bottom: rem(-86px);
+            left: 0;
+            z-index: $z-five-berries;
+        }
+
+    }
+
+    .feedback__title {
+        z-index: 100;
+    }
+
+    .avatar {
+        max-width: 100%;
+    }
+
+    .reviews__display::after {
+        content: none;
     }
 }

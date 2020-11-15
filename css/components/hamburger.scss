@@ -4,6 +4,7 @@
     justify-content: space-between;
     height: 20px;
     display: none;
+    z-index: 200;
 }
 
 .hamburger__plank {
@@ -11,4 +12,16 @@
     background: #fff;
     height: 4px;
     border-radius: 10px;
+}
+
+.hamburger__plank--top-active {
+    transform: translateY(5px) translateX(0) rotate(45deg);
+}
+
+.hamburger__plank--middle-active {
+    display: none;
+}
+
+.hamburger__plank--bottom-active {
+    transform: translateY(-11px) translateX(0) rotate(-45deg); 
 }

@@ -1,6 +1,4 @@
 .order {
-    height: 100vh;
-    min-height: rem(650px);
     position: relative;
     background: url("../img/form__bg.png");
 
@@ -167,10 +165,7 @@
 
 
 @media (max-width: 768px) {
-    html {
-        font-size: 17px;
-    }
-
+    
     .order::before, .order::after {
         display: none;
     }
@@ -202,8 +197,3 @@
     }
 }
 
-@media (max-width: 480px) {
-    html{
-        font-size: 16px;
-    }
-}

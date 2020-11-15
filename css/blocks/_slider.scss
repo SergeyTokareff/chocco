@@ -1,0 +1,272 @@
+.bars {
+    background-color: #F8FAF9;
+    position: relative;
+    z-index: 100;
+
+    &::before {
+        content: "";
+        background: url(./../img/pattern-slider.png) right bottom -40% no-repeat;
+        width: rem(196px);
+        height: rem(453px);
+        position: absolute;
+        right: 0;
+        bottom: rem(-248px);
+    }
+
+    &::after {
+        content: '';
+        background: url('./../img/decor/blueberries.png');
+        position: absolute;
+        right: 2%;
+        bottom: rem(-84px);
+        width: rem(135px);
+        height: rem(112px);
+    }
+    
+}
+
+.slider {
+    position: relative;
+}
+
+.slider__arrow {
+    position: absolute;  
+    top: 50%;
+}
+
+.slider__arrow--prev {
+    left: rem(-22px);
+}
+
+.slider__arrow--next {
+    right: rem(-22px);
+}
+
+.slider__content {
+    overflow: hidden;
+}
+
+.slider__list {
+    display: flex;
+    width: 100%;
+}
+
+.slider__item {
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slider__left, .slider__right {
+    flex: 1;
+    display: flex;
+}
+
+.slider__left {
+    align-items: center;
+}
+
+.bars__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.slider__right {
+    padding-left: rem(40px);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ingridients {
+    width: rem(91px);
+    height: rem(91px);
+    background: #86C3D7;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.ingridients__text {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: rem(17px);
+}
+
+.composition {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    width: rem(270px);
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+    padding: 0 rem(25px) 0 rem(30px);
+    backdrop-filter: blur(40px);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.ingridients:hover .composition {
+    opacity: 1;
+    left: 100%;
+    cursor: pointer;
+}
+
+.ingridients:hover {
+    cursor: pointer;
+}
+
+.composition__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: rem(28px);
+    font-size: rem(16px);
+    line-height: rem(24px);
+    font-weight: bold;
+
+    &:last-child {
+        margin-bottom: rem(32px);
+    }
+}
+
+.slider__title {
+    color: #292929;
+    font-size: rem(36px);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: rem(43px);
+    margin: rem(23px) 0;
+}
+
+.slider__desc {
+    color: #666;
+    font-size: rem(18px);
+    line-height: rem(22px);
+
+}
+
+.slider__properties {
+    display: flex;
+    margin: rem(23px) 0;
+}
+
+.slider__calories, .slider__weight {
+    min-width: rem(186px);
+}
+
+.slider__properties--title {
+    font-size: rem(18px);
+    line-height: rem(22px);
+    color: #666;
+}
+
+.slider__properties--value {
+    font-size: rem(18px);
+    line-height: rem(22px);
+    color: #000;
+    font-weight: bold;
+}
+
+.slider__order {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider__price {
+    color: #151515;
+    font-size: rem(60px);
+    line-height: rem(60px);
+    font-weight: 300;
+    min-width: rem(148px);
+}
+
+.slider__to-order {
+    margin: 0 rem(90px) 0 0;
+    background: #497870;
+    color: #fff;
+
+    &:hover {
+        background: #fff;
+        color: #497870;
+    }
+}
+
+@media (max-width: 768px) {
+    .bars{
+
+        &::before {
+            content: "";
+            background: url('./../img/pattern-slider-small.png') right bottom no-repeat;
+            width: 149px;
+            height: 351px;
+            position: absolute;
+            right: 0;
+            bottom: rem(-120px);
+        }
+
+        &::after {
+            content: '';
+            background: url('./../img/decor/blueberries-small.png');
+            position: absolute;
+            right: 2%;
+            bottom: 0;
+            width: 106px;
+            height: 88px;
+        }
+    }
+
+    .slider__item {
+        flex-direction: column;
+    }
+
+    .ingridients {
+        display: none;
+    }
+
+    .slider__left {
+        justify-content: center;
+    }
+
+    .slider__right {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .slider__properties, .slider__order {
+        justify-content: center;
+    }
+
+    .slider__calories,
+    .slider__weight {
+        min-width: rem(150px);
+    }
+
+    .slider__to-order {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .bars {
+
+        &::after {
+            bottom: rem(-46px);
+            right: 0;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .slider__title {
+        margin: rem(10px) 0;
+    }
+
+    .slider__properties {
+        margin: rem(10px) 0;
+    }
+}
