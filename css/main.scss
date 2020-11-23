@@ -1,29 +1,16 @@
-
-
-
-
-
-@import 'vars';
+@import './vars';
 @import './layout/layout';
 @import './components/btn';
 @import './components/hamburger.scss';
 @import './components/fixed-menu';
 @import './components/fullscreen-menu.scss';
+@import './components/modal.scss';
 
 @import './blocks/header';
 @import './blocks/features';
 @import './blocks/slider';
+@import './blocks/team';
 @import './blocks/feedback';
 @import './blocks/order';
 @import './blocks/map';
 @import './blocks/footer';
-
-
-
-
-
-
-
-
-
-

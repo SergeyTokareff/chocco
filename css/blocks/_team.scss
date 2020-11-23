@@ -1,0 +1,200 @@
+.team {
+    position: relative;
+}
+
+.team::before {
+    content: '';
+    width: 104px;
+    height: 114px;
+    background: url('../img/decor/berry.png') no-repeat;
+    display: block;
+    position: absolute;
+    left: 2%;
+    bottom: rem(-48px);
+}
+
+
+.team__title {
+    font-size: rem(48px);
+    line-height: rem(58px);
+    color: #292929;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: rem(53px);
+}
+
+.team__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team__list--mobile-version {
+    display: none;
+}
+
+.team__item {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    &:last-child {
+        z-index: 100;
+    }
+}
+
+.team__img {
+    width: 100%; 
+    margin-bottom: rem(21px);
+}
+
+.team__title-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.team__name {
+    font-size: rem(21px);
+    line-height: rem(25px);
+    font-weight: bold;
+    color: #292929;
+    text-align: center; 
+    border: none;
+    background-color: transparent;
+    padding: 0;
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+    
+
+    &::after {
+        content: url('../img/triangle.svg');
+        width: 9px;
+        height: 9px;
+        display: inline-block;
+        margin-left: rem(4px);
+        bottom: 2px;
+        position: relative;
+    }
+
+    @media (max-width: 845px) {
+        font-size: 19px;
+    }
+}
+
+.triangle-up::after {
+    transform: rotate(180deg) translateY(20%);
+    top: 20px;
+}
+
+.team__img {
+    max-width: 100%;
+}
+
+.team__accordion {
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    transition: max-height .6s;
+}
+
+.team__accordion--open {
+    height: auto;
+    max-height: 140px;
+    transition: max-height .8s;
+}
+
+.team__position {
+    margin-bottom: rem(4px);
+    font-size: rem(18px);
+    line-height: rem(22px);
+    color: #292929;
+}
+
+.team__desc {
+    font-size: rem(18px);
+    line-height: rem(22px);
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .team::before {
+        background: url('../img/decor/berry_small.png');
+        width: 89px;
+        height: 98px;
+    }
+    
+    .team__list--desktop-version {
+        display: none;
+    }
+
+    .team__list--mobile-version {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team__item {
+        width: auto;
+        align-items: center;
+        margin-bottom: rem(16px);
+    }
+
+    .team__img--wrapper {
+        width: 50%;
+    }
+
+    .team__name {
+        font-size: rem(19px);
+        margin-bottom: rem(16px);
+        display: flex;
+
+
+        &::after {
+            top: 0.1px;
+        }
+    }
+
+    .triangle-up::after {
+        position: relative;
+        top: 16px;
+    }
+
+    .team__accordion {
+        position: static;
+    }
+
+    .team__accordion--content {
+        margin-bottom: rem(16px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width: 480px) {
+    .team__item {
+        margin-bottom: 0;
+    }
+
+    .team__img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .triangle-up::after {
+        top: 7px;
+    }
+}

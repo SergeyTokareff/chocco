@@ -1,5 +1,5 @@
 .header {
-    background: url(../../img/pattern.png) right bottom no-repeat;
+    background: url('../img/pattern.png') right bottom no-repeat;
     background-color:#61C4D9;
     position: relative;
 
@@ -156,7 +156,7 @@
 @media(max-width: 768px) {
 
     .header {
-        background: url(../../img/pattern.png) right center no-repeat;
+        background: url('./img/pattern.png') right center no-repeat;
         background-color:#61C4D9;
 
         &:before,
@@ -195,10 +195,11 @@
             content: "";
             width: 100%;
             max-width: 374px;
-            height: rem(220px);
+            height: rem(400px);
             background: url('./../img/chocolades-and-berries.png') no-repeat;
             background-size: contain;
             background-position: center;
+            margin-bottom: rem(25px);
         }
     }
     
@@ -216,6 +217,18 @@
 }
 
 @media (max-width: 480px) {
+
+    .header__container {
+        justify-content: center;
+        position: relative;
+    }
+
+    .top-header {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
    
     .header__title-text {
         width: 100%;
@@ -224,7 +237,6 @@
 }
 
 @media (max-width: 375px) {
-
     .top-header {
         padding-top: rem(5px);
     }

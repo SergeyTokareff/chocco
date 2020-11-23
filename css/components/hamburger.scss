@@ -14,14 +14,14 @@
     border-radius: 10px;
 }
 
-.hamburger__plank--top-active {
+.hamburger--active .hamburger__plank--top {
     transform: translateY(5px) translateX(0) rotate(45deg);
 }
 
-.hamburger__plank--middle-active {
+.hamburger--active .hamburger__plank--middle {
     display: none;
 }
 
-.hamburger__plank--bottom-active {
+.hamburger--active .hamburger__plank--bottom {
     transform: translateY(-11px) translateX(0) rotate(-45deg); 
 }
