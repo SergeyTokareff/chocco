@@ -1,0 +1,131 @@
+.menu {
+    background: url('/img/menu-bg.jpg') 50% no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu__title {
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: rem(48px);
+    line-height: rem(58px);
+    font-weight: bold;
+    top: 10%;
+    left: 10%;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.menu__item {
+    height: 100%;
+    visibility: visible;
+    display: flex;
+}
+
+.menu__item.active .menu__item--title{
+    color: yellow;
+}
+
+.menu__item.active .menu__content {
+    width: rem(524px);
+    transition: width .4s;
+}
+
+.menu__link {
+    text-decoration: none;
+    width: rem(102px);
+    display: flex;
+    justify-content: center;
+}
+
+.first-link {
+    background: url('../img/kokosovoe-maslo-dlya-zdorovya-i-krasoty.jpg');
+}
+
+.second-link {
+    background: url('../img/granola-bars-with-calamondin.jpg');
+}
+
+.third-link {
+    background: url('../img/wild-berries.jpg');
+}
+
+.menu__item--title {
+    white-space: nowrap;
+    font-size: rem(48px);
+    line-height: rem(58px);
+    font-weight: bold;
+    color: #fff;
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    margin-bottom: rem(20px);
+}
+
+.menu__content {
+    width: 0;
+    height: 100%;
+    background: rgba(51, 53, 55, 0.9);
+    transition: width .4s;
+}
+
+.menu__text {
+    width: 100%;
+    padding: rem(30px) rem(38px);
+    font-size: rem(16px);
+    line-height: rem(24px);
+    color: #fff;
+}
+
+.menu__content--close{
+    display: none;
+}
+
+
+@media (max-width: 480px) {
+    .menu__item.active {
+        order: 1;
+        flex-shrink: 0;
+        width: 100%;
+    }
+
+    .menu__text {
+        padding-top: rem(80px);
+    }
+
+    .menu__item.active .menu__content--close {
+        display: block;           
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        width: 18px;
+        height: 18px;
+
+        &::before, &::after {
+            content: '';
+            width: 18px;
+            height: 2px;
+            background: #fff;
+            position: absolute;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    
+    }
+    
+}

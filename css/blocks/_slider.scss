@@ -4,7 +4,7 @@
 
     &::before {
         content: "";
-        background: url(./../img/pattern-slider.png) right bottom -30% no-repeat;
+        background: url(/../img/pattern-slider.png) right bottom -30% no-repeat;
         width: rem(196px);
         height: rem(453px);
         position: absolute;
@@ -14,7 +14,7 @@
 
     &::after {
         content: '';
-        background: url('./../img/decor/blueberries.png');
+        background: url('/../img/decor/blueberries.png');
         position: absolute;
         right: 2%;
         bottom: rem(-84px);
@@ -202,7 +202,7 @@
 
         &::before {
             content: "";
-            background: url('./../img/pattern-slider-small.png') right bottom no-repeat;
+            background: url('/../img/pattern-slider-small.png') right bottom no-repeat;
             width: 149px;
             height: 351px;
             position: absolute;
@@ -212,7 +212,7 @@
 
         &::after {
             content: '';
-            background: url('./../img/decor/blueberries-small.png');
+            background: url('/../img/decor/blueberries-small.png');
             position: absolute;
             right: 2%;
             bottom: 0;
