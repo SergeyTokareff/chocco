@@ -1137,7 +1137,7 @@ p {
     content: none; } }
 .order {
   position: relative;
-  background: url("/img/form__bg.png"); }
+  background: url("./../img/form__bg.png"); }
   .order::before {
     content: "";
     background: url("./../img/decor/one__berry.png");
