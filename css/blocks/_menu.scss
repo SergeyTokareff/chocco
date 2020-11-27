@@ -1,5 +1,5 @@
 .menu {
-    background: url('/img/menu-bg.jpg') 50% no-repeat;
+    background: url('./../img/menu-bg.jpg') 50% no-repeat;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -49,15 +49,15 @@
 }
 
 .first-link {
-    background: url('../img/kokosovoe-maslo-dlya-zdorovya-i-krasoty.jpg');
+    background: url('./../img/kokosovoe-maslo-dlya-zdorovya-i-krasoty.jpg');
 }
 
 .second-link {
-    background: url('../img/granola-bars-with-calamondin.jpg');
+    background: url('./../img/granola-bars-with-calamondin.jpg');
 }
 
 .third-link {
-    background: url('../img/wild-berries.jpg');
+    background: url('./../img/wild-berries.jpg');
 }
 
 .menu__item--title {
@@ -109,6 +109,10 @@
         right: 20px;
         width: 18px;
         height: 18px;
+
+        &:hover {
+            cursor: pointer;
+        }
 
         &::before, &::after {
             content: '';

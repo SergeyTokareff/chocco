@@ -1,11 +1,11 @@
 .header {
-    background: url('/img/pattern.png') right bottom no-repeat;
+    background: url('./../img/pattern.png') right bottom no-repeat;
     background-color:#61C4D9;
     position: relative;
 
     &::before {
         content: "";
-        background: url('/img/decor/leaf.png');
+        background: url('./../img/decor/leaf.png');
         width: rem(59px);
         height: rem(112px);
         position: absolute;
@@ -15,7 +15,7 @@
 
     &::after {
         content: "";
-        background: url('/img/decor/bears.png');
+        background: url('./../img/decor/bears.png');
         width: rem(460px);
         height: rem(341px);
         position: absolute;
@@ -157,7 +157,7 @@
 @media(max-width: 768px) {
 
     .header {
-        background: url('/img/pattern.png') right center no-repeat;
+        background: url('./../img/pattern.png') right center no-repeat;
         background-color:#61C4D9;
 
         &:before,
@@ -201,7 +201,7 @@
             width: 100%;
             max-width: 374px;
             height: rem(400px);
-            background: url('/../img/chocolades-and-berries.png') no-repeat;
+            background: url('./../img/chocolades-and-berries.png') no-repeat;
             background-size: contain;
             background-position: center;
             margin-bottom: rem(25px);

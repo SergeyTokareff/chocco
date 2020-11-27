@@ -4,7 +4,7 @@
 
     &::before {
         content: "";
-        background: url('/img/decor/one__berry.png');
+        background: url('./../img/decor/one__berry.png');
         width: rem(47px);
         height: rem(48px);
         position: absolute;
@@ -14,7 +14,7 @@
 
     &::after {
         content: "";
-        background: url('/img/decor/order__leaf.png');
+        background: url('./../img/decor/order__leaf.png');
         width: rem(135px);
         height: rem(188px);
         position: absolute;
@@ -104,7 +104,7 @@
         border-radius: rem(4px);
 
         &::before {
-            background: url('/img/tick.png') center center no-repeat;
+            background: url('./../img/tick.png') center center no-repeat;
         }
     }
 }
