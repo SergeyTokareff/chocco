@@ -33,7 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: rem(405px);
     
     
 
@@ -189,8 +189,7 @@
     justify-content: space-between;
 }
 
-.player__mute {
-    
+.player__mute {    
     cursor: pointer;
     margin-right: rem(18px);
     background: transparent;
