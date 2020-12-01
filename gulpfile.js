@@ -74,11 +74,11 @@ task('social-icons', () => {
         .pipe(svgSprite({
             mode: {
                 symbol: {
-                    sprite: "./social-icons.svg"
+                    sprite: "../social-icons.svg"
                 }
             }
         }))
-        .pipe(dest(`${DIST_PATH}/img/social-icons`));
+        .pipe(dest(`${DIST_PATH}/img`));
 });
 
 task('server', () => {
