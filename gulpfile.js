@@ -74,7 +74,7 @@ task('social-icons', () => {
         .pipe(svgSprite({
             mode: {
                 symbol: {
-                    sprite: "../social-icons.svg"
+                    sprite: "./social-icons.svg"
                 }
             }
         }))
