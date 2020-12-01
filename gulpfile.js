@@ -78,7 +78,7 @@ task('social-icons', () => {
                 }
             }
         }))
-        .pipe(dest(`${DIST_PATH}/img`));
+        .pipe(dest(`${DIST_PATH}/img/social-icons`));
 });
 
 task('server', () => {
