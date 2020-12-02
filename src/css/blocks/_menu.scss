@@ -131,5 +131,9 @@
         }
     
     }
+
+    .menu__content, .menu__item.active .menu__content {
+        transition: none;
+    }
     
 }

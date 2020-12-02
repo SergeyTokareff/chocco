@@ -205,3 +205,17 @@
     }
 }
 
+@media (max-width: 480px) {
+    .order__title {
+        margin-bottom: 1rem;
+    }
+
+    .form__order-btn {
+        margin-top: 0;
+    }
+
+    .form__reset-btn {
+        margin-top: 0;
+    }
+}
+
