@@ -63,6 +63,8 @@
 
 
 .header__phone {
+    display: flex;
+    align-items: end;
     text-decoration: none;
     color: #fff;
     font-weight: 400;
